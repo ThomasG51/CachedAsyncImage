@@ -11,6 +11,7 @@
 		7E90574A29858EB8003BCB6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E90574929858EB8003BCB6F /* ContentView.swift */; };
 		7E90574C29858EB9003BCB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E90574B29858EB9003BCB6F /* Assets.xcassets */; };
 		7E90574F29858EB9003BCB6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E90574E29858EB9003BCB6F /* Preview Assets.xcassets */; };
+		7E90575929858F4F003BCB6F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7E90575829858F4F003BCB6F /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E90575929858F4F003BCB6F /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = CachedAsyncImage;
+			packageProductDependencies = (
+				7E90575829858F4F003BCB6F /* SDWebImageSwiftUI */,
+			);
 			productName = CachedAsyncImage;
 			productReference = 7E90574429858EB8003BCB6F /* CachedAsyncImage.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 7E90573B29858EB8003BCB6F;
+			packageReferences = (
+				7E90575729858F4F003BCB6F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 7E90574529858EB8003BCB6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E90575729858F4F003BCB6F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E90575829858F4F003BCB6F /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E90575729858F4F003BCB6F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E90573C29858EB8003BCB6F /* Project object */;
 }
